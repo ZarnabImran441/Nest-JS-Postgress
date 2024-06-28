@@ -1,0 +1,45 @@
+{
+  "buildOptions": {
+    "incremental": true
+  },
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2021",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+    "strict": true,
+    "paths": {
+      "@lib/base-library": [
+        "libs/base-library/src"
+      ],
+      "@lib/base-library/*": [
+        "libs/base-library/src/*"
+      ],
+      "@test-lib/test-base-library": [
+        "libs/test-base-library/src"
+      ],
+      "@test-lib/test-base-library/*": [
+        "libs/test-base-library/src/*"
+      ],
+      "@lib/automations-library": [
+        "libs/automations-library/src"
+      ],
+      "@lib/automations-library/*": [
+        "libs/automations-library/src/*"
+      ]
+    }
+  }
+}

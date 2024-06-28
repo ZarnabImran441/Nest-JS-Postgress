@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/task-management/src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "webpack": true,
+    "tsConfigPath": "apps/task-management/tsconfig.app.json"
+  },
+  "monorepo": true,
+  "root": "apps/task-management",
+  "projects": {
+    "financial-outlook": {
+      "type": "application",
+      "root": "apps/financial-outlook",
+      "entryFile": "main",
+      "sourceRoot": "apps/financial-outlook/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/financial-outlook/tsconfig.app.json"
+      }
+    },
+    "task-management": {
+      "type": "application",
+      "root": "apps/task-management",
+      "entryFile": "main",
+      "sourceRoot": "apps/task-management/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/task-management/tsconfig.app.json"
+      }
+    },
+    "base-library": {
+      "type": "library",
+      "root": "libs/base-library",
+      "entryFile": "index",
+      "sourceRoot": "libs/base-library/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/base-library/tsconfig.lib.json"
+      }
+    },
+    "test-base-library": {
+      "type": "library",
+      "root": "libs/test-base-library",
+      "entryFile": "index",
+      "sourceRoot": "libs/test-base-library/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/test-base-library/tsconfig.lib.json"
+      }
+    },
+    "automations": {
+      "type": "application",
+      "root": "apps/automations",
+      "entryFile": "main",
+      "sourceRoot": "apps/automations/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/automations/tsconfig.app.json"
+      }
+    },
+    "automations-library": {
+      "type": "library",
+      "root": "libs/automations-library",
+      "entryFile": "index",
+      "sourceRoot": "libs/automations-library/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/automations-library/tsconfig.lib.json"
+      }
+    }
+  }
+}

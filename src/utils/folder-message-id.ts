@@ -1,0 +1,15 @@
+export const FolderMessageId = {
+    CREATE_SPACE: 'create space',
+    UPDATE_SPACE: 'update space',
+    DELETE_SPACE: 'delete space',
+    CREATE_FOLDER: 'create folder',
+    UPDATE_FOLDER: 'update folder',
+    DELETE_FOLDER: 'delete folder',
+    ADD_MEMBER: 'add member',
+    UPDATE_MEMBER: 'update member',
+    REMOVE_MEMBER: 'remove member',
+    ARCHIVE_FOLDER: 'archive folder',
+    COPY_FOLDER: 'copy folder',
+    RESTORE_ARCHIVE: 'restore archive',
+    VISIT_SPACE: 'visit space',
+};
